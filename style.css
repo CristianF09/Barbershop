@@ -620,3 +620,64 @@ a.social-link:focus {
 .img-overlay:hover .overlay {
   transform: translateY(0px);
 }
+
+/* Form styling */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 44px;
+  margin-top: 44px;
+}
+
+.form-row {
+  display: flex;
+  gap: 30px;
+}
+
+form .label-text {
+  color: white;
+  letter-spacing: 1.1px;
+  text-transform: uppercase;
+  position: absolute;
+  top: -8px;
+  left: 0;
+  transition: top var(--transition);
+}
+
+form .input::placeholder {
+  color: rgba(157, 164, 189, 0.4);
+  font-size: 11px;
+  letter-spacing: 1.1px;
+  text-transform: uppercase;
+}
+
+form .input {
+  appearance: none;
+  outline: none;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(157, 164, 189, 0.40);
+  width: 100%;
+  color: rgba(157, 164, 189, 0.4);
+  padding: 8px 0;
+  transition: border var(--transition), color var(--transition);
+}
+
+form .input:placeholder-shown ~ .label-text {
+  display: none;
+  top: 0;
+}
+
+form .input:focus {
+  color: white;
+  border-color: white;
+}
+
+form .input:focus::placeholder {
+  color: white;
+}
+
+form .form-group {
+  flex: 1;
+  position: relative;
+}
