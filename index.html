@@ -376,7 +376,42 @@
           <!-- Book a section -->
           <section class="section booking-form">
             <h2>Book a Service</h2>
-            <button class="button-transparent">Send</button>
+            <form action="">
+              <div class="form-row">
+                <label for="" class="form-group">
+                  <input
+                    type="text"
+                    name="username"
+                    placeholder="Name*"
+                    class="input"
+                    required
+                  />
+                  <span class="label-text">Name</span>
+                </label>
+
+                <label class="form-group">
+                  <input
+                    type="text"
+                    placeholder="Telephone*"
+                    name="telephone"
+                    class="input"
+                    required
+                  />
+                  <span class="label-text">Telephone</span>
+                </label>
+              </div>
+
+              <label class="form-group">
+                <textarea
+                  name="message"
+                  rows="3"
+                  placeholder="Message"
+                  class="input"
+                ></textarea>
+                <span class="label-text">Message</span>
+              </label>
+              <button class="button-transparent">Send</button>
+            </form>
           </section>
 
           <!-- Contacts -->
