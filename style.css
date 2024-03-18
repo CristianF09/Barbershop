@@ -617,51 +617,6 @@ a.social-link:focus {
   left: 31px;
 }
 
-/* Stilizare tableta si device-uri peste 768px */
-@media screen and (min-width: 768px) {
-  .global-aside {
-    background: white;
-    display: flex;
-    flex-direction: column;
-    flex: 0 1 155px;
-    align-items: center;
-    justify-content: space-between;
-    padding: 55px;
-  }
-
-  .global-aside-links {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .global-aside-links > * {
-    margin-top: 40px;
-  }
-
-  .mobile-logo {
-    display: none;
-  }
-
-  .burger-menu {
-    position: absolute;
-    top: 40px;
-    right: 39px;
-  }
-}
-
-/* Stilizare desktop si device-uri peste 1200px */
-@media screen and (min-width: 1200px) {
-  .global-header .main-navigation {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .burger-menu {
-    display: none;
-  }
-}
-/* Form styling */
 form {
   display: flex;
   flex-direction: column;
@@ -720,4 +675,49 @@ form .input:focus::placeholder {
 form .form-group {
   flex: 1;
   position: relative;
+}
+
+/* Stilizare tableta si device-uri peste 768px */
+@media screen and (min-width: 768px) {
+  .global-aside {
+    background: white;
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 155px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 55px;
+  }
+
+  .global-aside-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .global-aside-links > * {
+    margin-top: 40px;
+  }
+
+  .mobile-logo {
+    display: none;
+  }
+
+  .burger-menu {
+    position: absolute;
+    top: 40px;
+    right: 39px;
+  }
+}
+
+/* Stilizare desktop si device-uri peste 1200px */
+@media screen and (min-width: 1200px) {
+  .global-header .main-navigation {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .burger-menu {
+    display: none;
+  }
 }
